@@ -1,4 +1,6 @@
 #!/bin/bash
+#Variables
+#password="Miler"
 
 apt update
 apt upgrade
@@ -15,4 +17,5 @@ docker run -d -p 33060:3306 --name mysql -v /home/ubuntu/data:/var/lib/mysql -e 
 #Entramos a la consola de nuestro docker MySQL
 docker exec -it mysql bash
 
-mysql -u root <<< "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Miler';"
+#mysql -u root -p$password <<< "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Miler';"
+mysql -u root -pMiler <<< "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Miler';"
