@@ -3,7 +3,7 @@
 apt update
 apt upgrade
 
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-sudo apt install docker-ce
+apt install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - -y
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y
+apt install docker-ce -y
