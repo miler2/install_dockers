@@ -1,6 +1,4 @@
 #!/bin/bash
-#Variables
-#password="Miler"
 
 apt update -y
 apt upgrade -y
