@@ -1,4 +1,6 @@
 #!/bin/bash
+set -x
+
 mkdir -p /root/docker/mysql/conf.d
 
 #Esto es lo que tendríamos que hacer si lo estuviéramos haciendo manualmente
@@ -12,5 +14,16 @@ mkdir -p /root/docker/mysql/conf.d
 cp my-custom.cnf /root/docker/mysql/conf.d/my-custom.cnf
 
 #Eliminamos el docker y lo ejecutamos de nuevo.
+docker stop mysql
 docker rm mysql
-./../scripts/mysql.sh
+#Ejecutamos el mysql.sh uniendo los dos archivos de configuración con este archivo .sh
+./mysql.sh
+
+#Una vez hecho esto usaremos este comando para ver si hemos realizado correctamente los cambios
+echo "Aquí vemos si los cambios se han realizado correctamente, tiene que salir 250."
+echo "Si sale 150, es que no se ha realizado correctamente"
+echo "Ejecuta el siguiente comando desde la consola del docker para verificar los cambios"
+echo "sudo docker exec -it mysql bash"
+echo "mysql -u root -pMiler -e 'show global variables like "max_connections"';"
+#Este comando no me funciona (preguntar al de IAW)
+#docker exec -i mysql bash < mysql -u root -pMiler -e 'show global variables like "max_connections"';
