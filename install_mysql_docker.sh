@@ -11,7 +11,10 @@ apt install docker-ce -y
 
 #Creamos el docker MySQL con persistencia de datos:
 #Usamos el archivo mysql.sh
-./mysql.sh
+./scripts/mysql.sh
+
+#Creamos el docker PhpMyAdmin
+./scripts/phpmyadmin.sh
 
 #Hacemos la configuración del docker mysql
-./mysql_config.sh
+./scripts/mysql_config.sh
