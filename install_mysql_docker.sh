@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 apt update -y
 apt upgrade -y
