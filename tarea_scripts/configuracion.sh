@@ -25,5 +25,5 @@ echo "Si sale 150, es que no se ha realizado correctamente"
 echo "Ejecuta el siguiente comando desde la consola del docker para verificar los cambios"
 echo "sudo docker exec -it mysql bash"
 echo "mysql -u root -pMiler -e 'show global variables like "max_connections"';"
-#Este comando no me funciona (preguntar al de IAW)
+#Este comando no me funciona (preguntar en IAW)
 #docker exec -i mysql bash < mysql -u root -pMiler -e 'show global variables like "max_connections"';
