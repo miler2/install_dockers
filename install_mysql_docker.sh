@@ -1,6 +1,13 @@
 #!/bin/bash
 set -x
 
+echo "----------------------------------------------------------------"
+echo "¿Qué contraseña quieres para el usuario root de mysql?"
+read password_root_mysql
+echo "¿Qué contraseña quieres para el docker de mysql?"
+read password_docker_mysql
+echo "----------------------------------------------------------------"
+
 apt update -y
 apt upgrade -y
 
