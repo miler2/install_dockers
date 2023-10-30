@@ -10,4 +10,8 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu fo
 apt install docker-ce -y
 
 #Creamos el docker MySQL con persistencia de datos:
-docker run -d -p 33060:3306 --name mysql -v /home/ubuntu/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Miler mysql
+#Usamos el archivo mysql.sh
+./mysql.sh
+
+#Hacemos la configuración del docker mysql
+./mysql_config.sh
