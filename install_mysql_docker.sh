@@ -1,7 +1,8 @@
 #!/bin/bash
+set -x
 
-apt update -y
-apt upgrade -y
+#apt update -y
+#apt upgrade -y
 
 #Instalamos docker en nuestra máquina
 apt install apt-transport-https ca-certificates curl software-properties-common -y

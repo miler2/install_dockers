@@ -1,7 +1,10 @@
 # Instalación de Dockers
 Este es el script que me instalará automáticamente lo necesario en la máquina para realizar la creación del docker mysql y phpmyadmin en ubuntu.  
 
-Nos instala el docker MySQL y PhpMyAdmin, además de configurar el usuario root local a contraseña "Miler" con native password.
+Nos instala el docker MySQL y PhpMyAdmin, además de configurar el usuario root local a contraseña "hola" con native password.
+
+# IMPORTANTE
+Antes de ejecutar el script, por favor, modifica la contraseña a una que tú eligas, en el archivo .env dentro de la carpeta scripts.
 
 ## Indicaciones:
 ### Instalación
