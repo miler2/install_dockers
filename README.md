@@ -4,7 +4,7 @@ Este es el script que me instalará automáticamente lo necesario en la máquina
 Nos instala el docker MySQL y PhpMyAdmin, además de configurar el usuario root local a contraseña "hola" con native password.
 
 # IMPORTANTE
-Antes de ejecutar el script, por favor, modifica la contraseña a una que tú eligas, en el archivo .env dentro de la carpeta scripts.
+Antes de ejecutar el script, por favor, modifica la CONTRASEÑA a una que tú eligas, en el archivo .env dentro de la carpeta scripts.
 
 ## Indicaciones:
 ### Instalación
