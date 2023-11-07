@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-#apt update -y
+apt update -y
 #apt upgrade -y
 
 #Instalamos docker en nuestra máquina
