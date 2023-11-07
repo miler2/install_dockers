@@ -8,6 +8,8 @@ Antes de ejecutar el script, por favor, modifica la CONTRASEÑA a una que tú el
 
 (La contraseña por defecto es "hola")
 
+Si te ha dado error en la última línea, intenta ejecutar el archivo de nuevo, probablemente te funcione.
+
 ## Indicaciones:
 ### Instalación
 Si es la primera vez instalando docker en esta máquina vamos a dar permisos de ejecución al archivo install_mysql_docker.sh y lo ejecutaremos. Éste archivo nos hace la instalación entera.  
