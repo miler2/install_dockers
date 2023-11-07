@@ -6,6 +6,8 @@ Nos instala el docker MySQL y PhpMyAdmin, además de configurar el usuario root 
 # IMPORTANTE
 Antes de ejecutar el script, por favor, modifica la CONTRASEÑA a una que tú eligas, en el archivo .env dentro de la carpeta scripts.
 
+(La contraseña por defecto es "hola")
+
 ## Indicaciones:
 ### Instalación
 Si es la primera vez instalando docker en esta máquina vamos a dar permisos de ejecución al archivo install_mysql_docker.sh y lo ejecutaremos. Éste archivo nos hace la instalación entera.  
